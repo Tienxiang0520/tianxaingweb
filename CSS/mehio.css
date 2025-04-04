@@ -1,0 +1,111 @@
+body {
+    margin: 0;   
+    background-color: #ccffcc;
+}
+
+#container {
+    margin: 0 auto;
+    width: 932px;
+    background-color: #ccccff;
+}
+#menu {
+    height: 50px;
+    background-color: #99cc33;
+}
+
+#banner {
+    background-image: url('../images/banner3.jpg');
+    width:932px;
+    height: 230px;  
+}
+#mainContent {
+    overflow: auto;
+    background-color:white;
+}
+
+#sidebar {
+    float: left;
+    width: 200px;
+    height: 500px;
+    
+}
+
+#content {
+    float: right;
+    width: 732px;
+    height: 500px;   
+}
+#footer {
+    height: 80px;
+    
+    background-color: #669999;
+}
+.hlist li{
+    list-style-type:none;
+    float:left;
+    padding:10px;
+
+}
+
+.hlist a{
+    text-decoration:none;
+    font-family:標楷體;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    padding-left:12px;
+}
+.hlist a:hover{
+    color:blue;
+}
+.vlist {
+    background-color: #ffa64d;
+    width: 150px;
+    margin-left: 0;
+    margin-top: 30px;
+    padding: 0px;
+    
+}
+    .vlist li {
+        display: block;
+        height: 40px;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 2px solid #fff;
+    }
+
+    .vlist a {
+        text-decoration: none;
+        font-family: 微軟正黑體;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+       
+        
+    }
+.vlist a:hower{
+    color:yellow;
+}
+title{
+    background-color:#ff7733;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    font-family:微軟正黑體;
+    margin-top:30px;
+    padding-left:20px;
+
+}
+p {
+    color: #cc6600;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+}
+ol li{
+    line-height:200%;
+}
+.foot p{
+    text-align:center;
+    font-size:14px;
+    color:white;
+}
