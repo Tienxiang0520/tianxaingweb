@@ -1,62 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     background-image: url(../圖片/圓圈背景.png);
     background-size: cover;
     font-family: DFKai-sb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
 }
+
+body > div:first-child{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 h1{
-    writing-mode: vertical-rl;
-    float: left;
-    padding-top:150px;
-    padding-left:80px;
-    font-size: 40px;
+    margin: 0;
+    font-size: 36px;
     color: rgb(43, 0, 255);
+    text-align: center;
+    padding: 10px 0;
 }
+
 #container{
     margin: 0 auto;
-    width: 932px;
+    width: 100%;
+    max-width: 932px;
     background-color: #ccccff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
+
 #menu {
-    height: 50px;
     background-color: #99cc33;
+    padding: 10px 20px;
 }
+
 #banner {
     background-image: url('../圖片/banner.png');
     background-size: cover;
-    width:932px;
-    height: 230px;  
+    background-position: center;
+    width: 100%;
+    min-height: 230px;
 }
+
 #mainContent {
-    overflow: auto;
     background-color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
+
 #content {
-    float: right;
-    width: 932px;
-    height: 370px;   
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
 #footer {
-    height: 24px;
-    
     background-color: #669999;
+    text-align: center;
+    padding: 10px;
+}
+
+.hlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .hlist li{
     background-color: antiquewhite;
     list-style-type:none;
-    float:left;
-    padding:7px;
-    margin: 3px;
+    padding:7px 12px;
+    border-radius: 6px;
 }
+
 .hlist a{
     text-decoration:none;
-    
     color:black;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    
 }
+
 .hlist a:hover{
     color:blue;
 }
@@ -66,8 +107,65 @@ img {
     height: auto; /* 高度自動，保持比例 */
     max-width: 930px; /* 限制最大寬度，避免過大 */
     display: block; /* 移除底部空白 */
+    margin: 0 auto;
 }
+
 #日誌
 {
     max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 32px;
+    }
+
+    .hlist a{
+        font-size: 18px;
+    }
+
+    #banner{
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        padding: 10px;
+    }
+
+    .hlist{
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .hlist li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hlist a{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    body{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    body > div:first-child{
+        max-width: 120px;
+    }
+
+    h1{
+        writing-mode: vertical-rl;
+        padding: 40px 0;
+    }
+
+    #container{
+        flex: 1 1 700px;
+    }
 }
